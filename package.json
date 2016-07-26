@@ -1,0 +1,25 @@
+{
+  "name": "react-skeleton-ui",
+  "version": "1.0.0",
+  "description": "A set of React components set up for use with Skeleton CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DHedgecock/react-skeleton-ui.git"
+  },
+  "keywords": [
+    "React",
+    "Skeleton",
+    "CSS",
+    "Components"
+  ],
+  "author": "Dan Hedgecock",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DHedgecock/react-skeleton-ui/issues"
+  },
+  "homepage": "https://github.com/DHedgecock/react-skeleton-ui#readme"
+}
