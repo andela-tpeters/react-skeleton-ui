@@ -4,7 +4,7 @@
   "description": "A set of React components set up for use with Skeleton CSS",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
+    "build": "NODE_ENV=production webpack -p",
     "prepublish": "babel --presets 'babel-preset-es2015' --plugins 'transform-es2015-modules-umd' src --ignore __tests__ --out-dir ./dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -33,10 +33,19 @@
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-0": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "csswring": "^5.1.0",
     "eslint": "^3.0.1",
     "eslint-plugin-react": "^5.2.2",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "flexboxgrid": "^6.3.0",
+    "postcss-cssnext": "^2.7.0",
+    "postcss-loader": "^0.9.1",
+    "precss": "^1.4.0",
     "react": "^15.0.0",
     "react-dom": "^15.0.0",
+    "react-hot-loader": "^1.3.0",
+    "style-loader": "^0.13.1",
     "webpack": "^1.13.1"
   },
   "peerDependencies": {
