@@ -54,7 +54,7 @@ module.exports = {
     new webpack.NoErrorsPlugin(), // Handle errors gracefully when using hot module plugin
     new ExtractTextPlugin('styles.css'), // Specify stylesheet to extract styles into
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV) || 'development' // Make React super svelte
+      'process.env': { NODE_ENV: JSON.stringify(process.env.NODE_ENV || 'development') } // Make React super svelte
     })
   ],
 
