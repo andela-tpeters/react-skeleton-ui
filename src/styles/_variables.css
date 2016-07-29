@@ -1,0 +1,44 @@
+/*****************************/
+/* Application Variables
+/*****************************/
+
+/* Colors */
+$black: #000;
+$white: #fff;
+
+$gray-light: #818a91;
+$gray-dark: #373a3c;
+
+$blueA: #1c2e36;
+$blueB: #0e687a;
+$blueC: #1a9dae;
+$blueD: #25bcca;
+$blueE: #30c8d6;
+
+$primary: #0ce3ac;
+$secondary: $blueA;
+$info: $blueD;
+$danger: #c25;
+$warning: #f0ad4e;
+$success: $primary;
+
+/* Typography */
+$font-family-base: 'Raleway', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-size-root: 10px;
+$font-size-base: 1.5rem;
+$line-height-base: 1.6;
+$abbr-border-color: $gray-light;
+$text-muted: $gray-light;
+
+$link-color: $primary;
+$link-decoration: none;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: underline;
+
+$body-color: $gray-dark;
+$body-bg: $white; /* Make this a little darker? */
+
+$cursor-disabled: not-allowed;
+
+$table-bg: transparent;
+$table-cell-padding: 0.75rem;

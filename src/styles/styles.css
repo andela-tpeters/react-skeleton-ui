@@ -1,9 +1,16 @@
 /*****************************/
-/* Application Styles
+/* React Skeleton UI Styles
 /*****************************/
 
-/* Reset Baseline */
-@import 'normalize';
+/* Variables */
+@import 'variables';
 
-/* Grid */
+/* Reset Baseline */
+@import 'reset/normalize';
+@import 'reset/reboot';
+
+/* That Sweet Ass Flexbox Grid */
 @import '../../node_modules/flexboxgrid/dist/flexboxgrid.css';
+
+/* Skeleton Elements CSS */
+@import './elements/typography';
