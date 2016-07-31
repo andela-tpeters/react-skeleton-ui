@@ -22,23 +22,23 @@ export const Typography = () => (
     </Row>
 
     <pre>
-      <code>
-        &lt;!-- Standard Headings --&gt;
-        &lt;h1&gt;Heading&lt;/h1&gt;
-        &lt;h2&gt;Heading&lt;/h2&gt;
-        &lt;h3&gt;Heading&lt;/h3&gt;
-        &lt;h4&gt;Heading&lt;/h4&gt;
-        &lt;h5&gt;Heading&lt;/h5&gt;
-        &lt;h6&gt;Heading&lt;/h6&gt;
-
-        &lt;!-- Base type size --&gt;
-        &lt;p&gt;The base type is 15px over 1.6 line height (24px)&lt;/p&gt;
-
-        &lt;!-- Other styled text tags --&gt;
-        &lt;strong&gt;Bolded&lt;/strong&gt;
-        &lt;em&gt;Italicized&lt;/em&gt;
-        &lt;a&gt;Colored&lt;/a&gt;
-        &lt;u&gt;Underlined&lt;/u&gt;
+      <code className='prettyprint'>
+        &lt;!-- Standard Headings --&gt;{'\n'}
+        &lt;h1&gt;Heading&lt;/h1&gt;{'\n'}
+        &lt;h2&gt;Heading&lt;/h2&gt;{'\n'}
+        &lt;h3&gt;Heading&lt;/h3&gt;{'\n'}
+        &lt;h4&gt;Heading&lt;/h4&gt;{'\n'}
+        &lt;h5&gt;Heading&lt;/h5&gt;{'\n'}
+        &lt;h6&gt;Heading&lt;/h6&gt;{'\n'}
+        {'\n'}
+        &lt;!-- Base type size --&gt;{'\n'}
+        &lt;p&gt;The base type is 15px over 1.6 line height (24px)&lt;/p&gt;{'\n'}
+        {'\n'}
+        &lt;!-- Other styled text tags --&gt;{'\n'}
+        &lt;strong&gt;Bolded&lt;/strong&gt;{'\n'}
+        &lt;em&gt;Italicized&lt;/em&gt;{'\n'}
+        &lt;a&gt;Colored&lt;/a&gt;{'\n'}
+        &lt;u&gt;Underlined&lt;/u&gt;{'\n'}
       </code>
     </pre>
 

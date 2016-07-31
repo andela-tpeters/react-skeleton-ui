@@ -1,0 +1,89 @@
+/*****************************/
+/* Button Styles
+/*****************************/
+
+@define-mixin buttonState $variable {
+  color: $(variable);
+  border-color: $(variable);
+  outline: 0;
+}
+
+/* Foundation Styles */
+.btn,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: $button-color;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid $button-border;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  /* Hover & Focus */
+  &:hover,
+  &:focus {
+    @mixin buttonState $button-color-hover;
+  }
+
+  /* Active */
+  &:active {
+    color: $button-color-active;
+    border-color: $button-border-color-active;
+    outline: 0;
+  }
+
+  /* Disabled */
+  &:disabled {
+    color: $button-color-disabled;
+    border-color: $button-border-color-disabled;
+    outline: 0;
+  }
+}
+
+/*
+ * Primary (@TODO: Handle branding programatically)
+ */
+.btn.primary,
+button.primary,
+input[type="submit"].primary,
+input[type="reset"].primary,
+input[type="button"].primary {
+  color: $primary-button-color;
+  background-color: $primary-button-background-color;
+  border-color: $primary-button-border;
+
+  /* Primary Hover & Focus */
+  &:hover,
+  &:focus {
+    color: $primary-button-color;
+    background-color: $primary-button-background-color-hover;
+    border-color: $primary-button-border-color-hover;
+  }
+
+  /* Primary Active */
+  &:active {
+    color: $primary-button-color;
+    background-color: $primary-button-background-color-active;
+    border-color: $primary-button-border-color-active;
+  }
+
+  /* Primary Disabled */
+  &:active {
+    color: $primary-button-color;
+    background-color: $primary-button-background-color-disabled;
+    border-color: $primary-button-border-color-disabled;
+  }
+}

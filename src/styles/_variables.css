@@ -25,7 +25,8 @@ $success: $primary;
 /* Typography */
 $font-family-base: 'Raleway', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-size-root: 10px;
-$font-size-base: 1.5rem;
+$font-size-base: 1.5em; /* Skeleton: currently ems cause chrome bug misinterpreting rems on body element */
+$font-weight-base: 400;
 $line-height-base: 1.6;
 $abbr-border-color: $gray-light;
 $text-muted: $gray-light;
@@ -35,10 +36,35 @@ $link-decoration: none;
 $link-hover-color: darken($link-color, 15%);
 $link-hover-decoration: underline;
 
-$body-color: $gray-dark;
+$body-color: #222;
 $body-bg: $white; /* Make this a little darker? */
 
-$cursor-disabled: not-allowed;
+$code-background: #F1F1F1;
+$code-border: #E1E1E1;
 
+/* Buttons */
+$button-background-color: transparent;
+
+/* @TODO: Get a gray-scale going, how many shades? */
+$button-color: #555;
+$button-color-hover: #333;
+$button-color-active: #222;
+$button-color-disabled: #888;
+$button-border: #BBB;
+$button-border-color-hover: #888;
+$button-border-color-active: #222;
+$button-border-color-disabled: #E3E3E3;
+
+$primary-button-color: #FFF;
+$primary-button-background-color: $blueD;
+$primary-button-background-color-hover: $blueC;
+$primary-button-background-color-active: $blueB;
+$primary-button-background-color-disabled: $blueE;
+$primary-button-border: $blueD;
+$primary-button-border-color-hover: $blueC;
+$primary-button-border-color-active: $blueB;
+$primary-button-border-color-disabled: $blueE;
+
+/* Tables */
 $table-bg: transparent;
 $table-cell-padding: 0.75rem;

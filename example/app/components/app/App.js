@@ -3,6 +3,7 @@ import React from 'react';
 import { Container, Row, Col } from '../../../../src';
 
 import { Typography } from '../elements/Typography';
+import { Buttons } from '../elements/Buttons';
 
 export default () => (
   <Container fluid>
@@ -14,6 +15,11 @@ export default () => (
     <Row>
       <Col>
         <Typography />
+      </Col>
+    </Row>
+    <Row>
+      <Col>
+        <Buttons />
       </Col>
     </Row>
   </Container>
