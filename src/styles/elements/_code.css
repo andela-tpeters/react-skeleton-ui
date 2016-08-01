@@ -11,6 +11,7 @@ code {
   background: $body-background;
   border: 1px solid $code-border;
   border-radius: 4px;
+  overflow-x: auto;
 }
 pre > code {
   display: block;

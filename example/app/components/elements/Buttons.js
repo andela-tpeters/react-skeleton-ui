@@ -17,7 +17,7 @@ export const Buttons = () => (
         <input type='submit' value='submit input' />
       </Col>
       <Col>
-        <input type='button' value='button input'/>
+        <input type='button' value='button input' disabled/>
       </Col>
     </Row>
     <Row className='around-xs'>
@@ -31,12 +31,12 @@ export const Buttons = () => (
         <input className='btn primary' type='submit' value='submit input' />
       </Col>
       <Col>
-        <input className='btn primary' type='button' value='button input' />
+        <input className='btn primary' type='button' value='button input' disabled />
       </Col>
     </Row>
 
-    <pre className='code-example'>
-      <code className='code-example-body prettyprint'>
+    <pre>
+      <code className='prettyprint'>
         &lt;!-- Standard buttons --&gt;{'\n'}
         &lt;a className='button' href='#'&gt;Anchor button&lt;/a&gt;{'\n'}
         &lt;button&gt;Button element&lt;/button&gt;{'\n'}

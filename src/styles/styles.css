@@ -3,13 +3,14 @@
 /*****************************/
 
 /* Variables */
+/* If you would like to customize, replace this file with your variable choices */
 @import 'variables';
 
 /* Reset Browser Jank */
 @import 'reset/normalize';
 @import 'reset/reboot';
 
-/* Set Base Styles */
+/* Setup Base Styles */
 @import 'base';
 
 /* That Sweet Ass Flexbox Grid */
@@ -18,4 +19,8 @@
 /* Skeleton Elements CSS */
 @import './elements/typography';
 @import './elements/buttons';
+@import './elements/forms';
+@import './elements/lists';
 @import './elements/code';
+@import './elements/tables';
+@import './elements/media-queries';

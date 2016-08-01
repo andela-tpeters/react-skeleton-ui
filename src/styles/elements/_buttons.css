@@ -1,11 +1,17 @@
 /*****************************/
 /* Button Styles
 /*****************************/
+@import '../variables';
 
 @define-mixin buttonState $variable {
   color: $(variable);
   border-color: $(variable);
-  outline: 0;
+}
+
+@define-mixin primaryButtonState $variable {
+  border: none;
+  background-color: $(variable);
+  color: $primary-button-color;
 }
 
 /* Foundation Styles */
@@ -32,24 +38,16 @@ input[type="button"] {
   cursor: pointer;
   box-sizing: border-box;
 
-  /* Hover & Focus */
+  /* Hover, Focus, Active */
   &:hover,
-  &:focus {
-    @mixin buttonState $button-color-hover;
-  }
-
-  /* Active */
+  &:focus,
   &:active {
-    color: $button-color-active;
-    border-color: $button-border-color-active;
-    outline: 0;
+    @mixin buttonState $button-color-hover;
   }
 
   /* Disabled */
   &:disabled {
-    color: $button-color-disabled;
-    border-color: $button-border-color-disabled;
-    outline: 0;
+    @mixin buttonState $button-color-disabled;
   }
 }
 
@@ -61,29 +59,17 @@ button.primary,
 input[type="submit"].primary,
 input[type="reset"].primary,
 input[type="button"].primary {
-  color: $primary-button-color;
-  background-color: $primary-button-background-color;
-  border-color: $primary-button-border;
+  @mixin primaryButtonState $primary-button-bg;
 
-  /* Primary Hover & Focus */
+  /* Primary Hover, Focus, Active */
   &:hover,
-  &:focus {
-    color: $primary-button-color;
-    background-color: $primary-button-background-color-hover;
-    border-color: $primary-button-border-color-hover;
-  }
-
-  /* Primary Active */
+  &:focus,
   &:active {
-    color: $primary-button-color;
-    background-color: $primary-button-background-color-active;
-    border-color: $primary-button-border-color-active;
+    @mixin primaryButtonState $primary-button-bg-hover;
   }
 
   /* Primary Disabled */
-  &:active {
-    color: $primary-button-color;
-    background-color: $primary-button-background-color-disabled;
-    border-color: $primary-button-border-color-disabled;
+  &:disabled {
+    @mixin primaryButtonState $primary-button-bg-disabled;
   }
 }

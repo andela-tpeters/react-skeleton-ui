@@ -1,10 +1,19 @@
 /*****************************/
 /* Base Styles
 /*****************************/
+@import 'variables';
 
-/*
- * Element Margins
- */
+/* Misc
+ –––––––––––––––––––––––––––––––––––––––––––––––––– */
+ hr {
+   margin-top: 3rem;
+   margin-bottom: 3.5rem;
+   border-width: 0;
+   border-top: 1px solid $gray-border;
+ }
+
+/* Element Margins
+ –––––––––––––––––––––––––––––––––––––––––––––––––– */
 button,
 .button {
   margin-bottom: 1rem;
@@ -25,4 +34,51 @@ ul,
 ol,
 form {
   margin-bottom: 2.5rem;
+}
+
+/* Utilities
+ –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Widths */
+.full-width {
+  width: 100%;
+}
+
+/* Centering & Floating */
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
+}
+
+/* Show/Hide */
+.show {
+  display: block !important;
+}
+.hidden {
+  display: none !important;
+}
+.visible {
+  visibility: visible !important;
+}
+.invisible {
+  visibility: hidden;
+}
+
+/* Self Clearing Goodness */
+.cf {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
 }
