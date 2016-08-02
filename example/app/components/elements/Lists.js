@@ -3,7 +3,7 @@ import React from 'react';
 import { Row, Col } from '../../../../src';
 
 export const Lists = () => (
-  <div className='docs-section' id='lists'>
+  <div id='lists'>
     <h6 className='docs-header'>Lists</h6>
     <Row>
       <Col>
@@ -34,8 +34,8 @@ export const Lists = () => (
       </Col>
     </Row>
 
-    <pre className='code-example'>
-      <code className='code-example-body prettyprint'>
+    <pre>
+      <code className='code-sample'>
         &lt;ul&gt;{'\n  '}
           &lt;li&gt;Item 1&lt;/li&gt;{'\n  '}
           &lt;li&gt;{'\n    '}

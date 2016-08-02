@@ -22,7 +22,7 @@ export const Typography = () => (
     </Row>
 
     <pre>
-      <code className='prettyprint'>
+      <code className='code-sample'>
         &lt;!-- Standard Headings --&gt;{'\n'}
         &lt;h1&gt;Heading&lt;/h1&gt;{'\n'}
         &lt;h2&gt;Heading&lt;/h2&gt;{'\n'}

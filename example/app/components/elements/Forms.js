@@ -3,7 +3,7 @@ import React from 'react';
 import { Row, Col } from '../../../../src';
 
 export const Forms = () => (
-  <div className='docs-section' id='forms'>
+  <div id='forms'>
     <h6 className='docs-header'>Forms</h6>
     <p>Forms are a huge pain, but hopefully these styles make it a bit easier. All inputs, select, and buttons are normalized for a common height cross-browser so inputs can be stacked or placed alongside each other.</p>
     <div>

@@ -3,7 +3,7 @@ import React from 'react';
 import { Row, Col } from '../../../../src';
 
 export const Buttons = () => (
-  <div className='docs-section' id='buttons'>
+  <div id='buttons'>
     <h6 className='docs-header'>Buttons</h6>
     <p>Buttons come in two basic flavors in Skeleton. The standard <code>&lt;button&gt;</code> element is plain, whereas the <code>.button-primary</code> button is vibrant and prominent. Button styles are applied to a number of appropriate form elements, but can also be arbitrarily attached to anchors with a <code>.button</code> className.</p>
     <Row className='around-xs'>
