@@ -12,38 +12,45 @@ import { Tables } from '../elements/Tables';
 export default () => (
   <Container fluid>
     <Row>
-      <Col xs={12}>
-        <h1>Skeleton</h1>
+      <Col>
+        <h1>React + Skeleton + Flexbox Grid</h1>
+        <p>This project is a Frankenstein amalgamation of my favorite parts of a few different projects. The intent is to provide a very simple lightweight alternative to some of the heavier, more complex React UI suites available. Styles are built on Bootstrap's reboot, utilize <a href='http://flexboxgrid.com/' target='_blank'>Flexbox Grid's</a> grid, and all of Skeleton's awesome styles. A small number of React components are included for convenience.</p>
       </Col>
     </Row>
+    <hr/>
     <Row>
       <Col>
-        <Typography />
+        <Typography/>
       </Col>
     </Row>
+    <hr/>
     <Row>
       <Col>
-        <Buttons />
+        <Buttons/>
       </Col>
     </Row>
+    <hr/>
     <Row>
       <Col>
-        <Forms />
+        <Forms/>
       </Col>
     </Row>
+    <hr/>
     <Row>
       <Col>
-        <Lists />
+        <Lists/>
       </Col>
     </Row>
+    <hr/>
     <Row>
       <Col>
-        <Code />
+        <Code/>
       </Col>
     </Row>
+    <hr/>
     <Row>
       <Col>
-        <Tables />
+        <Tables/>
       </Col>
     </Row>
   </Container>

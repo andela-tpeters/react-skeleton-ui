@@ -31,7 +31,8 @@ $body-bg: $white;
 
 $gray-border: $gray-lighter;
 
-$code-background: $white;
+$code-color: #c7254e;
+$code-bg: #f9f2f4;
 $code-border: $gray-border;
 
 /* Typography
@@ -53,7 +54,6 @@ $link-hover-decoration: underline;
 
 /* Buttons
  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-$button-background-color: transparent;
 
 /* Color */
 $button-color: $gray-darker;

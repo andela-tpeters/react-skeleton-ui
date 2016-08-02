@@ -10,10 +10,10 @@ there.
 */
 
 /* Larger than mobile (Small Devices - Tablets) */
-@media (min-width: 48em) {}
+@media only screen and (min-width: 48em) {}
 
 /* Larger than phablet (Medium Devices - Desktops) */
-@media (min-width: 64em) {}
+@media only screen and (min-width: 64em) {}
 
 /* Larger than tablet (Large Devices - Desktops) */
-@media (min-width: 75em) {}
+@media only screen and (min-width: 75em) {}

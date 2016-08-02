@@ -36,7 +36,7 @@ export const Buttons = () => (
     </Row>
 
     <pre>
-      <code className='prettyprint'>
+      <code className='code-sample'>
         &lt;!-- Standard buttons --&gt;{'\n'}
         &lt;a className='button' href='#'&gt;Anchor button&lt;/a&gt;{'\n'}
         &lt;button&gt;Button element&lt;/button&gt;{'\n'}

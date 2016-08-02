@@ -6,29 +6,21 @@
   max-width: 800px;
 }
 
-.docs-section {
-  padding: 6rem 0;
-  border-top: 1px solid #eee;
-  margin-bottom: 0;
-}
-
 .docs-header {
   text-transform: uppercase;
-  font-size: 1.4rem;
   letter-spacing: .2rem;
   font-weight: 600;
 }
 
+/* Styles the <h1> 50rem bits for heading examples */
 .heading-font-size {
   font-size: 1.2rem;
   color: #999;
   letter-spacing: normal;
 }
 
-/*
- * Code Samples
- */
-.prettyprint {
+/* Code Samples */
+.code-sample {
   font-size: 1.2rem;
   padding: 2.5rem 3rem;
   font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace;

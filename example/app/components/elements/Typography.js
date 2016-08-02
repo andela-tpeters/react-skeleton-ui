@@ -3,7 +3,7 @@ import React from 'react';
 import { Row, Col } from '../../../../src';
 
 export const Typography = () => (
-  <div className='docs-section' id='typography'>
+  <div id='typography'>
     <h6 className='docs-header'>Typography</h6>
     <p>Type is all set with the <code>rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property. Out of the box, Skeleton never changes the <code>&lt;html&gt;</code> font-size, but it's there in case you need it for your project. All measurements are still base 10 though so, an <code>&lt;h1&gt;</code> with <code>5.0rem</code>font-size just means <code>50px</code>.</p>
     <Row>
@@ -41,6 +41,5 @@ export const Typography = () => (
         &lt;u&gt;Underlined&lt;/u&gt;{'\n'}
       </code>
     </pre>
-
   </div>
 );

@@ -15,7 +15,7 @@ export const Code = () => (
     </div>
 
     <pre>
-      <code className='prettyprint'>
+      <code className='code-sample'>
         &lt;code&gt;{'\n  '}
           &lt;pre&gt;{'\n    '}
             .some-className &#123;{'\n      '}

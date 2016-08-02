@@ -4,6 +4,7 @@ var webpack = require('webpack');
 var precss = require('precss');
 var cssnext = require('postcss-cssnext');
 var csswring = require('csswring');
+var mqpacker = require('css-mqpacker');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 // ========================================================
@@ -60,7 +61,7 @@ module.exports = {
 
   // PostCSS config: nested style rules, autoprefixed vendor rules and minify with source maps
   postcss: function() {
-    return [precss, cssnext, csswring];
+    return [precss, cssnext, mqpacker, csswring];
   },
 
   // Mount CSS and JS Modules
