@@ -1,0 +1,25 @@
+/*****************************/
+/* Code Styles
+/*****************************/
+@import '../variables';
+
+code {
+  color: $code-color;
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background-color: $code-bg;
+  border: 1px solid $code-border;
+  border-radius: 4px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+pre > code {
+  background-color: $body-bg;
+  color: inherit;
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre;
+}

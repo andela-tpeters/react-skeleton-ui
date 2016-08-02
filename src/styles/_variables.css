@@ -1,0 +1,77 @@
+/*****************************/
+/* Application Variables
+/*****************************/
+
+/* Colors
+ –––––––––––––––––––––––––––––––––––––––––––––––––– */
+$black: #222;
+$white: #fff;
+
+/* Grayscale
+ –––––––––––––––––––––––––––––––––––––––––––––––––– */
+$gray-base: $black;
+$gray-darker: #3E3F3A;
+$gray-dark: #8E8C84;
+$gray: #98978B;
+$gray-light: #DFD7CA;
+$gray-lighter: #F8F5F0;
+
+/* Branding
+ –––––––––––––––––––––––––––––––––––––––––––––––––– */
+$primary: #0e687a;
+$success: #93C54B;
+$info: #25bcca;
+$warning: #F47C3C;
+$danger: #d9534f;
+
+/* Misc Elements
+ –––––––––––––––––––––––––––––––––––––––––––––––––– */
+$body-color: $gray-base;
+$body-bg: $white;
+
+$gray-border: $gray-lighter;
+
+$code-color: #c7254e;
+$code-bg: #f9f2f4;
+$code-border: $gray-border;
+
+/* Typography
+ –––––––––––––––––––––––––––––––––––––––––––––––––– */
+$font-family-base: 'Raleway', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-size-root: 10px;
+$font-size-base: 1.5em;
+$font-weight-base: 400;
+$line-height-base: 1.6;
+$abbr-border-color: $gray-light;
+$text-muted: $gray-light;
+
+/* Anchors
+ –––––––––––––––––––––––––––––––––––––––––––––––––– */
+$link-color: $info;
+$link-decoration: none;
+$link-hover-color: color($link-color blackness(+ 15%));
+$link-hover-decoration: underline;
+
+/* Buttons
+ –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Color */
+$button-color: $gray-darker;
+$button-color-hover: $black;
+$button-color-disabled: $gray;
+
+/* Border */
+$button-border: color($button-color lightness(+ 40%));
+$button-border-color-hover: color($button-color-hover lightness(+ 5%));
+$button-border-color-disabled: color($button-color-disabled a(65%));
+
+/* @TODO Handle branding separately */
+$primary-button-color: #FFF;
+$primary-button-bg: $primary;
+$primary-button-bg-hover: color($primary-button-bg blackness(+ 15%));
+$primary-button-bg-disabled: color($primary-button-bg a(65%));
+
+/* Tables
+ –––––––––––––––––––––––––––––––––––––––––––––––––– */
+$table-bg: transparent;
+$table-cell-padding: 0.75rem;

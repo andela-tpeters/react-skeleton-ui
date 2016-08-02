@@ -1,0 +1,28 @@
+/*****************************/
+/* Example Page Styles
+/*****************************/
+
+.container-fluid {
+  max-width: 800px;
+}
+
+.docs-header {
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-weight: 600;
+}
+
+/* Styles the <h1> 50rem bits for heading examples */
+.heading-font-size {
+  font-size: 1.2rem;
+  color: #999;
+  letter-spacing: normal;
+}
+
+/* Code Samples */
+.code-sample {
+  font-size: 1.2rem;
+  padding: 2.5rem 3rem;
+  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace;
+  -webkit-font-smoothing: antialiased;
+}

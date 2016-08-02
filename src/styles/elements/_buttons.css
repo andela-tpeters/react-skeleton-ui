@@ -1,0 +1,75 @@
+/*****************************/
+/* Button Styles
+/*****************************/
+@import '../variables';
+
+@define-mixin buttonState $variable {
+  color: $(variable);
+  border-color: $(variable);
+}
+
+@define-mixin primaryButtonState $variable {
+  border: none;
+  background-color: $(variable);
+  color: $primary-button-color;
+}
+
+/* Foundation Styles */
+.btn,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: $button-color;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid $button-border;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  /* Hover, Focus, Active */
+  &:hover,
+  &:focus,
+  &:active {
+    @mixin buttonState $button-color-hover;
+  }
+
+  /* Disabled */
+  &:disabled {
+    @mixin buttonState $button-color-disabled;
+  }
+}
+
+/*
+ * Primary (@TODO: Handle branding programatically)
+ */
+.btn.primary,
+button.primary,
+input[type="submit"].primary,
+input[type="reset"].primary,
+input[type="button"].primary {
+  @mixin primaryButtonState $primary-button-bg;
+
+  /* Primary Hover, Focus, Active */
+  &:hover,
+  &:focus,
+  &:active {
+    @mixin primaryButtonState $primary-button-bg-hover;
+  }
+
+  /* Primary Disabled */
+  &:disabled {
+    @mixin primaryButtonState $primary-button-bg-disabled;
+  }
+}
