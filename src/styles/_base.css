@@ -3,6 +3,24 @@
 /*****************************/
 @import 'variables';
 
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+html {
+  font-size: $font-size-root;
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base; /* defaults to 1.5rem or 15px */
+  line-height: $line-height-base;
+  font-weight: $font-weight-base;
+  /* Go easy on the eyes and use something other than `#000` for text */
+  color: $body-color;
+  /* By default, `<body>` has no `background-color` so we set one as a best practice. */
+  background-color: $body-bg;
+}
+
 /* Misc
  –––––––––––––––––––––––––––––––––––––––––––––––––– */
  hr {
