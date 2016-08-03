@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Tables = () => (
+export default () => (
   <div id='tables'>
     <h6 className='docs-header'>Tables</h6>
     <p>Be sure to use properly formed table markup with <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> when building a <code>table</code>.</p>

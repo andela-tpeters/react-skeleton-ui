@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Row, Col } from '../../../../src';
 
-export const Lists = () => (
+export default () => (
   <div id='lists'>
     <h6 className='docs-header'>Lists</h6>
     <Row>

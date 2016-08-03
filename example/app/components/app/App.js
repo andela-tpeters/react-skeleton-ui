@@ -2,12 +2,13 @@ import React from 'react';
 
 import { Container, Row, Col } from '../../../../src';
 
-import { Typography } from '../elements/Typography';
-import { Buttons } from '../elements/Buttons';
-import { Forms } from '../elements/Forms';
-import { Lists } from '../elements/Lists';
-import { Code } from '../elements/Code';
-import { Tables } from '../elements/Tables';
+import Typography from '../elements/Typography';
+import Buttons from '../elements/Buttons';
+import Forms from '../elements/Forms';
+import Lists from '../elements/Lists';
+import Code from '../elements/Code';
+import Tables from '../elements/Tables';
+import Cards from '../elements/Cards';
 
 export default () => (
   <Container fluid>
@@ -51,6 +52,12 @@ export default () => (
     <Row>
       <Col>
         <Tables/>
+      </Col>
+    </Row>
+    <hr/>
+    <Row>
+      <Col>
+        <Cards/>
       </Col>
     </Row>
   </Container>
