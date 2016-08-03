@@ -1,0 +1,91 @@
+/*****************************/
+/* Button Styles
+/*****************************/
+@import '../variables';
+
+/* Use position fixed to handle making full screen regardless of where this is in the DOM */
+.modal-bg {
+  background: $background-shadow;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+  z-index: $modal-bg;
+
+  &.active {
+    pointer-events: inherit;
+    visibility: visible;
+  }
+}
+
+/* Modal element proper, also use position fixed to handle screen location along with some max height and width for large view */
+.modal-wrapper {
+  background: $body-bg;
+  border-radius: 0;
+  margin: 0;
+  max-height: 100vh;
+  max-width: 100%;
+  opacity: 0;
+  overflow: auto;
+  padding: 20px;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transition: opacity 300ms linear; /* Fade in the modal b/c we're so damn classy */
+  visibility: hidden; /* Apparently this is part of usability. Things should be styled as hidden for screen readers I guess */
+  z-index: 1051;
+
+  /* Active class is used for transitioning modal into visible state */
+  &.active {
+    opacity: 1; /* 300ms transition for classiness */
+    pointer-events: inherit;
+    visibility: visible; /* Happens immediately */
+  }
+
+  /* Close x uses the times html entity */
+  .close-x {
+    width: 3rem;
+    height: 3rem;
+    line-height: 1;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 3rem;
+    color: $text-muted;
+
+    &:hover {
+      color: $gray-base;
+    }
+  }
+
+  /* Handle making the modal not full page starting with medium screens */
+  @media only screen and (min-width: 48em) {
+    & {
+      border-radius: 2px;
+      box-shadow: $box-shadow 0px 1px 6px, $box-shadow 0px 1px 4px;
+      max-height: 65vh;
+      max-width: 60%;
+      margin: 0 auto;
+      padding: 30px; /* Bump up padding a bit in full screen */
+      left: 5%;
+      right: 5%;
+      top: 100px;
+    }
+
+    &.small { max-width: 45%; }
+    &.medium { max-width: 60%; }
+  }
+
+  /* Override widths for large screens */
+  @media only screen and (min-width: 64em) {
+    &.small { max-width: 30%; }
+    &.medium { max-width: 45%; }
+  }
+}

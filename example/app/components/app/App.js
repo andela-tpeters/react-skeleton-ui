@@ -9,6 +9,7 @@ import Lists from '../elements/Lists';
 import Code from '../elements/Code';
 import Tables from '../elements/Tables';
 import Cards from '../elements/Cards';
+import Modals from '../elements/Modals';
 
 export default () => (
   <Container fluid>
@@ -58,6 +59,12 @@ export default () => (
     <Row>
       <Col>
         <Cards/>
+      </Col>
+    </Row>
+    <hr/>
+    <Row>
+      <Col>
+        <Modals/>
       </Col>
     </Row>
   </Container>

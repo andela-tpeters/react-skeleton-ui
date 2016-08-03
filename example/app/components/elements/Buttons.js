@@ -1,6 +1,5 @@
 import React from 'react';
-
-import { Row, Col } from '../../../../src';
+import { Row, Col, Button } from '../../../../src';
 
 export default () => (
   <div id='buttons'>
@@ -12,7 +11,7 @@ export default () => (
         <a className='btn' href='#'>Anchor button</a>
       </Col>
       <Col>
-        <button>Button element</button>
+        <Button>React Component</Button>
       </Col>
       <Col>
         <input type='submit' value='submit input' />
@@ -26,7 +25,7 @@ export default () => (
         <a className='btn primary' href='#'>Anchor button</a>
       </Col>
       <Col>
-        <button className='btn primary'>Button element</button>
+        <Button className='primary'>React Component</Button>
       </Col>
       <Col>
         <input className='btn primary' type='submit' value='submit input' />

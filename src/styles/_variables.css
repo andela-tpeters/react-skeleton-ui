@@ -16,6 +16,7 @@ $gray: #98978B;
 $gray-light: #DFD7CA;
 $gray-lighter: #F8F5F0;
 $box-shadow: rgba(0, 0, 0, 0.125);
+$background-shadow: rgba(0, 0, 0, 0.45);
 
 /* Branding
  –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -24,6 +25,11 @@ $success: #93C54B;
 $info: #25bcca;
 $warning: #F47C3C;
 $danger: #d9534f;
+
+/* Z-Indices
+ –––––––––––––––––––––––––––––––––––––––––––––––––– */
+$modal-bg: 1000;
+$modal: 1001;
 
 /* Misc Elements
  –––––––––––––––––––––––––––––––––––––––––––––––––– */

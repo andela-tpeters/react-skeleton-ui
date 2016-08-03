@@ -23,4 +23,5 @@
 @import './elements/code';
 @import './elements/tables';
 @import './elements/cards';
+@import './elements/modals';
 @import './elements/media-queries';
