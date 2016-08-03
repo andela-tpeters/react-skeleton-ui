@@ -2,10 +2,15 @@ import React from 'react';
 
 import { Row, Col } from '../../../../src';
 
-export const Typography = () => (
+export default () => (
   <div id='typography'>
     <h6 className='docs-header'>Typography</h6>
     <p>Type is all set with the <code>rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property. Out of the box, Skeleton never changes the <code>&lt;html&gt;</code> font-size, but it's there in case you need it for your project. All measurements are still base 10 though so, an <code>&lt;h1&gt;</code> with <code>5.0rem</code>font-size just means <code>50px</code>.</p>
+    <p>Additional typogrpahy includes the use of the &lt;small&gt; element, <small>it can be used for creating fine print.</small></p>
+    <blockquote>
+      <p>The blockquote element can be used to create a blockquote</p>
+      <cite><small>- Used in conjunction with <code>&lt;cite&gt;</code> and <code>&lt;small&gt;</code> elements to create citations.</small></cite>
+    </blockquote>
     <Row>
       <Col>
         <p><strong>The typography base</strong> is <a href='http://www.google.com/fonts/specimen/Raleway'>Raleway</a> served by Google, set at 15rem (15px) over a 1.6 line height (24px). Other type basics like <a href='#'>anchors</a>, <strong>strong</strong>, <em>emphasis</em>, and <u>underline</u> are all obviously included.</p>

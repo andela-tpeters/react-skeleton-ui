@@ -55,3 +55,18 @@ a:hover {
 .text-danger {
   color: $danger;
 }
+
+/* Blockquotes
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+blockquote {
+  border-left: 5px solid $gray-border;
+  padding-left: 20px;
+
+  cite {
+    color: $gray-dark;
+  }
+
+  p:last-of-type {
+    margin-bottom: 1rem;
+  }
+}

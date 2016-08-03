@@ -2,10 +2,11 @@ import React from 'react';
 
 import { Row, Col } from '../../../../src';
 
-export const Buttons = () => (
+export default () => (
   <div id='buttons'>
     <h6 className='docs-header'>Buttons</h6>
     <p>Buttons come in two basic flavors in Skeleton. The standard <code>&lt;button&gt;</code> element is plain, whereas the <code>.button-primary</code> button is vibrant and prominent. Button styles are applied to a number of appropriate form elements, but can also be arbitrarily attached to anchors with a <code>.button</code> className.</p>
+    <p>Use the <code>.basic-b</code> class to create an accessible button that looks like a link. <button className='basic-b'>Great for accessibility!</button></p>
     <Row className='around-xs'>
       <Col>
         <a className='btn' href='#'>Anchor button</a>
