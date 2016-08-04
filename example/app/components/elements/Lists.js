@@ -1,6 +1,5 @@
 import React from 'react';
-
-import { Row, Col } from '../../../../src';
+import { Row, Col, List, ListItem, Button } from '../../../../src';
 
 export default () => (
   <div id='lists'>
@@ -35,7 +34,7 @@ export default () => (
     </Row>
 
     <pre>
-      <code className='code-sample'>
+      <code>
         &lt;ul&gt;{'\n  '}
           &lt;li&gt;Item 1&lt;/li&gt;{'\n  '}
           &lt;li&gt;{'\n    '}
@@ -51,5 +50,19 @@ export default () => (
         &lt;!-- Easily substitute any &lt;ul&gt; or an &lt;ol&gt; to get number lists or sublists. Skeleton doesn't support lists nested deeper than 2 levels --&gt;
       </code>
     </pre>
+
+    <Row>
+      {/* TODO: Split this out to a separate example */}
+      <p>The <code>&lt;List&gt;</code> and <code>&lt;ListItem&gt;</code> elements are available for creating lists of buttons. You can pass the prop <code>active</code> to any <code>&lt;ListItem&gt;</code> and it will receive a slightly darker background signifying that it is selected.</p>
+      <Col xs={4}>
+        <h6>Rad List Group</h6>
+        <hr/>
+        <List>
+          <ListItem><Button className='basic-b'>List Item</Button></ListItem>
+          <ListItem active><Button className='basic-b'>List Item</Button></ListItem>
+          <ListItem><Button className='basic-b'>List Item</Button></ListItem>
+        </List>
+      </Col>
+    </Row>
   </div>
 );

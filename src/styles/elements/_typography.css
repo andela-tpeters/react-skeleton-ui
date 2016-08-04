@@ -7,6 +7,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
   font-weight: 300;
+
+  small {
+    font-size: 65%;
+    color: $text-muted;
+  }
 }
 
 h1 { font-size: 4rem; line-height: 1.2; letter-spacing: -0.1rem; }
@@ -26,38 +31,28 @@ h6 { font-size: 1.5rem; line-height: 1.6; letter-spacing: 0; }
   h6 { font-size: 1.5rem; }
 }
 
-p {
-  margin-top: 0;
-}
-
-.text-center { text-align: center; }
-.text-right { text-align: right; }
-
+p { margin-top: 0; }
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 a {
   color: $link-color;
+
+  &:hover { color: $link-hover-color; }
 }
 
-a:hover {
-  color: $link-hover-color;
-}
+/* Alignment
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
 
 /* Colors
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.text-primary {
- color: $primary;
-}
-
-.text-success {
-  color: $success;
-}
-
-.text-danger {
-  color: $danger;
-}
+.text-primary { color: $primary; }
+.text-success { color: $success; }
+.text-danger { color: $danger; }
+.text-muted { color: $text-muted; }
 
 /* Blockquotes
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -70,6 +65,6 @@ blockquote {
   }
 
   p:last-of-type {
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; /* Cut down on margin for last item b/c it's too much and janks up the blockquote */
   }
 }

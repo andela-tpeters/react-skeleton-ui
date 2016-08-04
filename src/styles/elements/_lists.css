@@ -25,3 +25,20 @@ ol ul {
 li {
   margin-bottom: 1rem;
 }
+
+/* Button Group Lists
+ –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* No styles for .list-group at this time, list group items have styling */
+.list-item {
+  /* Hovering and being active receive gray backgrounds */
+  &:hover { background-color: $gray-lighter; }
+  &.active { background-color: $gray-light; }
+
+  .btn {
+    padding-left: 2rem;
+    width: 100%;
+    /* Give buttons 5px more height for list groups */
+    height: 43px;
+    line-height: 43px;
+  }
+}

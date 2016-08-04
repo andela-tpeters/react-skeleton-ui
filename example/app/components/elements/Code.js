@@ -15,7 +15,7 @@ export default () => (
     </div>
 
     <pre>
-      <code className='code-sample'>
+      <code>
         &lt;code&gt;{'\n  '}
           &lt;pre&gt;{'\n    '}
             .some-className &#123;{'\n      '}

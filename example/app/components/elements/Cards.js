@@ -2,7 +2,7 @@ import React from 'react';
 import { Card } from '../../../../src';
 
 export default () => (
-  <div id='Cards'>
+  <div id='cards'>
     <h6 className='docs-header'>Cards</h6>
     <p>Simple card wrappers are available with the bundled <code>&lt;Card/&gt;</code> React component.</p>
     <Card>
@@ -11,7 +11,7 @@ export default () => (
     </Card>
 
     <pre>
-      <code className='code-sample'>
+      <code>
         &lt;Card&gt;{'\n  '}
           &lt;h4&gt;A title&lt;/h4&gt;{'\n  '}
           Some really neat info{'\n'}

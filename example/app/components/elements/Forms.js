@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { Row, Col } from '../../../../src';
 
 export default () => (
@@ -33,7 +32,7 @@ export default () => (
     </div>
 
     <pre>
-      <code className='code-sample'>
+      <code>
         &lt;!-- The above form looks like this --&gt;{'\n'}
         &lt;form&gt;{'\n  '}
           &lt;div className='row'&gt;{'\n    '}

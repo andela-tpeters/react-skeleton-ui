@@ -10,20 +10,20 @@ $white: #fff;
 /* Grayscale
  –––––––––––––––––––––––––––––––––––––––––––––––––– */
 $gray-base: $black;
-$gray-darker: #3E3F3A;
-$gray-dark: #8E8C84;
-$gray: #98978B;
-$gray-light: #DFD7CA;
-$gray-lighter: #F8F5F0;
+$gray-darker: #3e3f3a;
+$gray-dark: #8e8c84;
+$gray: #98978b;
+$gray-light: #dfd7ca;
+$gray-lighter: #eee;
 $box-shadow: rgba(0, 0, 0, 0.125);
 $background-shadow: rgba(0, 0, 0, 0.45);
 
 /* Branding
  –––––––––––––––––––––––––––––––––––––––––––––––––– */
 $primary: #0e687a;
-$success: #93C54B;
+$success: #93c54b;
 $info: #25bcca;
-$warning: #F47C3C;
+$warning: #f47c3c;
 $danger: #d9534f;
 
 /* Z-Indices
@@ -45,12 +45,13 @@ $code-border: $gray-border;
 /* Typography
  –––––––––––––––––––––––––––––––––––––––––––––––––– */
 $font-family-base: 'Raleway', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-code: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace;
 $font-size-root: 10px;
 $font-size-base: 1.5rem;
 $font-weight-base: 400;
 $line-height-base: 1.6;
 $abbr-border-color: $gray-light;
-$text-muted: $gray-light;
+$text-muted: $gray;
 
 /* Anchors
  –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -73,7 +74,7 @@ $button-border-color-hover: color($button-color-hover lightness(+ 5%));
 $button-border-color-disabled: color($button-color-disabled a(65%));
 
 /* @TODO Handle branding separately */
-$primary-button-color: #FFF;
+$primary-button-color: #fff;
 $primary-button-bg: $primary;
 $primary-button-bg-hover: color($primary-button-bg blackness(+ 15%));
 $primary-button-bg-disabled: color($primary-button-bg a(65%));

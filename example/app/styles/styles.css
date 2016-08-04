@@ -3,26 +3,17 @@
 /*****************************/
 
 .container-fluid {
-  max-width: 800px;
+  max-width: 800px; /* Tighten up the grid for examples, looks better */
 }
 
+/* Add a bit more margin to the <hr> between each example */
+.example-rule {
+  margin: 3.5rem 0 4rem;
+}
+
+/* Rad styling from getskeleton.com for example headers */
 .docs-header {
   text-transform: uppercase;
   letter-spacing: .2rem;
   font-weight: 600;
-}
-
-/* Styles the <h1> 50rem bits for heading examples */
-.heading-font-size {
-  font-size: 1.2rem;
-  color: #999;
-  letter-spacing: normal;
-}
-
-/* Code Samples */
-.code-sample {
-  font-size: 1.2rem;
-  padding: 2.5rem 3rem;
-  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace;
-  -webkit-font-smoothing: antialiased;
 }

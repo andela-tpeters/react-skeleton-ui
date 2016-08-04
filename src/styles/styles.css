@@ -9,11 +9,11 @@
 /* Reset Browser Jank */
 @import 'normalize';
 
-/* Setup Base Styles */
-@import 'base';
-
 /* That Sweet Ass Flexbox Grid */
 @import '../../node_modules/flexboxgrid/dist/flexboxgrid.css';
+
+/* Setup Base Styles */
+@import 'base';
 
 /* Skeleton Elements CSS */
 @import './elements/typography';

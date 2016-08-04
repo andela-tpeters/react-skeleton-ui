@@ -36,7 +36,7 @@ export default () => (
     </Row>
 
     <pre>
-      <code className='code-sample'>
+      <code>
         &lt;!-- Standard buttons --&gt;{'\n'}
         &lt;a className='button' href='#'&gt;Anchor button&lt;/a&gt;{'\n'}
         &lt;button&gt;Button element&lt;/button&gt;{'\n'}

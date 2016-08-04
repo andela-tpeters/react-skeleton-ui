@@ -19,49 +19,49 @@ export default () => (
         <p>This project is a Frankenstein amalgamation of my favorite parts of a few different projects. The intent is to provide a very simple lightweight alternative to some of the heavier, more complex React UI suites available. Styles are built on Bootstrap's reboot, utilize <a href='http://flexboxgrid.com/' target='_blank'>Flexbox Grid's</a> grid, and all of Skeleton's awesome styles. A small number of React components are included for convenience.</p>
       </Col>
     </Row>
-    <hr/>
+    <hr className='example-rule'/>
     <Row>
       <Col>
         <Typography/>
       </Col>
     </Row>
-    <hr/>
+    <hr className='example-rule'/>
     <Row>
       <Col>
         <Buttons/>
       </Col>
     </Row>
-    <hr/>
+    <hr className='example-rule'/>
     <Row>
       <Col>
         <Forms/>
       </Col>
     </Row>
-    <hr/>
+    <hr className='example-rule'/>
     <Row>
       <Col>
         <Lists/>
       </Col>
     </Row>
-    <hr/>
+    <hr className='example-rule'/>
     <Row>
       <Col>
         <Code/>
       </Col>
     </Row>
-    <hr/>
+    <hr className='example-rule'/>
     <Row>
       <Col>
         <Tables/>
       </Col>
     </Row>
-    <hr/>
+    <hr className='example-rule'/>
     <Row>
       <Col>
         <Cards/>
       </Col>
     </Row>
-    <hr/>
+    <hr className='example-rule'/>
     <Row>
       <Col>
         <Modals/>

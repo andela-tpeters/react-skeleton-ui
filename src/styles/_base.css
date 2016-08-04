@@ -21,14 +21,19 @@ body {
   background-color: $body-bg;
 }
 
-/* Misc
+/* Flexbox Grid
  –––––––––––––––––––––––––––––––––––––––––––––––––– */
- hr {
-   margin-top: 3rem;
-   margin-bottom: 3.5rem;
-   border-width: 0;
-   border-top: 1px solid $gray-border;
- }
+/* Flexbox Grid's margins are only 0.5rem, which is 5px after setting the html
+ * font-size to 10px. Bump up to 2rem here for a bit more breathing room */
+.row {
+  margin-left: -2rem;
+  margin-right: -2rem;
+}
+
+.column {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 
 /* Element Margins
  –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -52,6 +57,16 @@ ul,
 ol,
 form {
   margin-bottom: 2.5rem;
+}
+
+/* Horizontal Rule
+ –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-width: 0;
+  border-top: 1px solid $gray-border;
 }
 
 /* Utilities
@@ -105,7 +120,7 @@ form {
  * Use this when making a 508 compliant clickable element using a <button> tag.
  * This class scrubs all of the default browser styling so that you
  * can style it as you would like */
-.basic-b {
+button.basic-b {
   appearance: none;
   font-weight: normal;
   border-radius: 0;

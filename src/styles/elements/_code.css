@@ -14,12 +14,15 @@ code {
   border-radius: 4px;
   overflow-x: auto;
   white-space: nowrap;
+  font-family: $font-family-code;
+  -webkit-font-smoothing: antialiased;
 }
 
 pre > code {
   background-color: $body-bg;
   color: inherit;
   display: block;
-  padding: 1rem 1.5rem;
+  font-size: 80%;
+  padding: 2.5rem 3rem;
   white-space: pre;
 }

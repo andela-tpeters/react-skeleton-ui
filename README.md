@@ -1,6 +1,6 @@
 # React Skeleton UI
 
-React-Skelton UI is a SCSS/React version of Dave Gamache's Skeleton boilerplate with some updates. It is a simple boilerplate for a clean, responsive UI.
+React-Skeleton UI is a SCSS/React version of Dave Gamache's Skeleton boilerplate with some updates. It is a simple boilerplate for a clean, responsive UI.
 
 ## Getting Started
 

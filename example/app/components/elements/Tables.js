@@ -32,7 +32,7 @@ export default () => (
     </div>
 
     <pre>
-      <code className='code-sample'>
+      <code>
         &lt;table className='full-width'&gt;{'\n  '}
           &lt;thead&gt;{'\n    '}
             &lt;tr&gt;{'\n      '}

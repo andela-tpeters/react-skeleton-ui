@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { Row, Col } from '../../../../src';
 
 export default () => (
@@ -17,17 +16,17 @@ export default () => (
         <p><strong>Headings</strong> create a family of distinct sizes each with specific <code>letter-spacing</code>, <code>line-height</code>, and <code>margins</code>.</p>
       </Col>
       <Col>
-        <h1>Heading<span className='heading-font-size'> <code>&lt;h1&gt;</code> 50rem</span></h1>
-        <h2>Heading<span className='heading-font-size'> <code>&lt;h2&gt;</code> 42rem</span></h2>
-        <h3>Heading<span className='heading-font-size'> <code>&lt;h3&gt;</code> 36rem</span></h3>
-        <h4>Heading<span className='heading-font-size'> <code>&lt;h4&gt;</code> 30rem</span></h4>
-        <h5>Heading<span className='heading-font-size'> <code>&lt;h5&gt;</code> 24rem</span></h5>
-        <h6>Heading<span className='heading-font-size'> <code>&lt;h6&gt;</code> 15rem</span></h6>
+        <h1>Heading <small><code>&lt;h1&gt;</code> 50rem</small></h1>
+        <h2>Heading <small><code>&lt;h2&gt;</code> 42rem</small></h2>
+        <h3>Heading <small><code>&lt;h3&gt;</code> 36rem</small></h3>
+        <h4>Heading <small><code>&lt;h4&gt;</code> 30rem</small></h4>
+        <h5>Heading <small><code>&lt;h5&gt;</code> 24rem</small></h5>
+        <h6>Heading <small><code>&lt;h6&gt;</code> 15rem</small></h6>
       </Col>
     </Row>
 
     <pre>
-      <code className='code-sample'>
+      <code>
         &lt;!-- Standard Headings --&gt;{'\n'}
         &lt;h1&gt;Heading&lt;/h1&gt;{'\n'}
         &lt;h2&gt;Heading&lt;/h2&gt;{'\n'}
